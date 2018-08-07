@@ -43,7 +43,15 @@ namespace ConsoleApplication1{
 
             int auxiliar=0;
 
-            
+            for (int i = 1; i <= n; i++)
+            {
+                Console.Write("Ingresa el valor " + i + " : ");
+                int num = Convert.ToInt32(Console.ReadLine());
+
+                if (num > auxiliar)
+                    auxiliar = num;
+
+            }
 
             return auxiliar;
         }
